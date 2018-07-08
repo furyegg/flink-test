@@ -63,7 +63,7 @@ public class SocketWindowWordCount {
 		InputStream in = SocketWindowWordCount.class.getClassLoader().getResourceAsStream("test.properties");
 		ParameterTool params = ParameterTool.fromPropertiesFile(in);
 		log.info("params count: {}", params.getNumberOfParameters());
-		params.toMap().entrySet().forEach(e -> log.info("\tkey: {} = value: {}", e.getKey(), e.getValue()));
+		params.toMap().entrySet().forEach(e -> log.info("\t{} = {}", e.getKey(), e.getValue()));
 	}
 	
 	// Data type for words with count
